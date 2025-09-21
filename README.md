@@ -187,7 +187,7 @@ conda activate object
 conda env list
 ```
 
-### So könnte man das Environment face wieder löschen
+### So könnte man das Environment object wieder löschen
 
 ```
 conda remove -n object --all
