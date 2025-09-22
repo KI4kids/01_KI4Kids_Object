@@ -43,6 +43,14 @@
 |sudo lsblk -e 1,7 -o NAME,FSTYPE,ROTA,SIZE,VENDOR,MODEL| Listet sd/ssd Infos|
 |sudo parted /dev/nvme0n1| Startet das Programm parted |
 |rm 1| SSD 1 neu partitionieren |
+|conda --version | Anaconda Versionsabfrage |
+|conda create -n myenv | Anaconda env erstellen  |
+|conda env list  |  Anaconda env auflisten |
+|conda remove -n myenv --all |Anaconda env löschen  |
+|conda deactivate  |  Anaconda deaktivieren |
+|conda env export > environment.yml  |  Anaconda env exportieren |
+|conda env create -f environment.yml  | Anaconda env importieren |
 |---|---|
+
 
 
