@@ -885,8 +885,67 @@ Datenbank finden. Sobald Sie diese haben, können Datenwissenschaftler und Daten
 Wenn Sie in der Phase der Datenerfassung feststecken, lohnt es sich vielleicht, die Art der Datenerfassung zu überdenken.
 
 ——————————————
+
 https://211223wpao5c26mc4pk.nextcloud.hosting.zone/apps/files/files/18767?dir=/%21KI
 
+```
+#pip install requests
+#dlnextcl
+
+import requests
+import os
+import shutil
+import urllib.request
+import zipfile
+
+# Erstelle den Ordner  nextcl
+os.makedirs("nextcl", exist_ok=True)
+
+# Wechsle in den Ordner
+os.chdir("nextcl")
+
+# Hilfsfunktion zum Herunterladen von Dateien
+def download_file(url, filename=None):
+    if not filename:
+        filename = url.split("/")[-1]
+    print(f"Downloading {filename} ...")
+    urllib.request.urlretrieve(url, filename)
+
+# Hilfsfunktion zum Entpacken und Löschen von ZIP-Dateien
+def unzip_and_remove(zip_filename):
+    print(f"Unzipping {zip_filename} ...")
+    with zipfile.ZipFile(zip_filename, 'r') as zip_ref:
+        zip_ref.extractall(".")
+    os.remove(zip_filename)
+    
+
+# Direktlink zum Teilen der Datei
+url = "https://211223wpao5c26mc4pk.nextcloud.hosting.zone/s/WaHq2pKJrzjCrgS/download"
+
+# Der lokale Dateiname für die gespeicherte ZIP-Datei
+output_file = "geo.zip"
+
+try:
+    # Stream-Modus für große Dateien
+    with requests.get(url, stream=True) as response:
+        response.raise_for_status()  # Fehler werfen bei HTTP-Fehlern
+        with open(output_file, 'wb') as f:
+            for chunk in response.iter_content(chunk_size=8192):
+                f.write(chunk)
+
+    print(f"Download erfolgreich! Datei gespeichert als: {output_file}")
+
+    unzip_and_remove("geo.zip")
+
+    # Zeige den Inhalt des aktuellen Verzeichnisses
+    print("Inhalt von nextcl:")
+    print(os.listdir("."))
+
+except requests.exceptions.HTTPError as http_err:
+    print(f"HTTP-Fehler: {http_err}")
+except Exception as err:
+    print(f"Ein Fehler ist aufgetreten: {err}")
+```
 ---
 
 <div style="position:absolute; left:2cm; ">   
@@ -894,5 +953,6 @@ https://211223wpao5c26mc4pk.nextcloud.hosting.zone/apps/files/files/18767?dir=/%
 </div>  
 
 ---
+
 
 
