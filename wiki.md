@@ -885,7 +885,7 @@ Datenbank finden. Sobald Sie diese haben, können Datenwissenschaftler und Daten
 Wenn Sie in der Phase der Datenerfassung feststecken, lohnt es sich vielleicht, die Art der Datenerfassung zu überdenken.
 
 ——————————————
-
+https://211223wpao5c26mc4pk.nextcloud.hosting.zone/apps/files/files/18767?dir=/%21KI
 
 ---
 
@@ -894,4 +894,5 @@ Wenn Sie in der Phase der Datenerfassung feststecken, lohnt es sich vielleicht, 
 </div>  
 
 ---
+
 
