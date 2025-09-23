@@ -886,7 +886,6 @@ Wenn Sie in der Phase der Datenerfassung feststecken, lohnt es sich vielleicht, 
 
 ——————————————
 
-https://211223wpao5c26mc4pk.nextcloud.hosting.zone/apps/files/files/18767?dir=/%21KI
 
 ```Python
 #pip install requests
@@ -953,6 +952,7 @@ except Exception as err:
 </div>  
 
 ---
+
 
 
 
