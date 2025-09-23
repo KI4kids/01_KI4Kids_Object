@@ -228,7 +228,7 @@ mkdir camtest
 cd camtest
 ```
 
-
+Python
 
 ```Python
 # camtest.py
@@ -353,7 +353,9 @@ pip install opencv-contrib-python
 
 Speichert das Video der USB-Kamera
 
-```
+Python
+
+```Python
 # save video.py
 # Speichert das Video der USB-Kamera
 
@@ -392,7 +394,9 @@ cv2.destroyAllWindows() #Fenster schließen
 ---
 ### Lade Bilddateien
 
-```
+Python
+
+```Python
 #dlpic.py
 
 import os
@@ -454,10 +458,10 @@ Fügt ein Logo in das erste Bild ein
 
 ![Bild](pic/gmund2.png)
 
+Python
 
 
-
-```
+```Python
 # logoeinf.py
 # Fügt ein Logo in das erste Bild ein
 
@@ -617,7 +621,9 @@ die zweite Zahlenreihe vier, sechs, acht. Das Programm soll die vierte Zahl der 
 
 Zahlenreihe ermitteln, wenn die vierte Zahl der ersten Zahlenreihe fünf ist.
 
-```
+Python
+
+```Python
 # zahl.py
 
 import torch
@@ -767,7 +773,7 @@ python detect.py --source 0
 
 Python
 
-```
+```Python
 # objcount.py
 
 import cv2
@@ -911,7 +917,9 @@ names:
 
 ### Objekte der Klasse 39 zählen
 
-```
+Python
+
+```Python
 # count39.py
 # Zaehlt Objekte der Klasse 39 (Bottle)
 
@@ -968,7 +976,7 @@ cv2.destroyAllWindows()
 
 Python
 
-```
+```Python
 #dlmp4.py
 
 import os
@@ -1034,7 +1042,9 @@ Verwende das Video bike.mp4
 
 lade bike.mp4 in dein Arbeitsverzeichnis
 
-```
+Python
+
+```Python
 #bikecount.py
 # Lade bike.mp4 in dein Arbeitsverzeichnis
 
@@ -1852,7 +1862,7 @@ Bildausschnitt mit Strg+S speichern
 
 Python
 
-```
+```Python
 # bildausschneiden.py
 '''
 Mit der Maus einen Bildbereich auswählen
@@ -1891,9 +1901,9 @@ Man kann Bilder mit Matplotlib zoomen, speichern usw.
 
 ![Bild](pic/mathplot2.png)
 
+Python
 
-
-```
+```Python
 # mathplot2.py
 
 import cv2 as cv
@@ -1923,7 +1933,7 @@ plt.show()
 
 Python
 
-```
+```Python
 # mathplot.py
 import numpy as np
 import cv2
