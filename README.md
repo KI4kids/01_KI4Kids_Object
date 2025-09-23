@@ -230,7 +230,7 @@ cd camtest
 
 
 
-```
+```Python
 # camtest.py
 # Video mit der USB-Kamera
 
