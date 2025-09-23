@@ -86,7 +86,7 @@ sudo apt update && sudo apt upgrade -y
 ## Linux Standard Base - Versionsabfrage
 bash
 
-```
+```bash
 lsb_release -a
 ```
 
