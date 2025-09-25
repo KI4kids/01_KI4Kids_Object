@@ -583,14 +583,14 @@ bash
 (git intallieren: sudo apt install git-all)
 
 ```
-git clone https://github.com/ultralytics/yolov5 ~/object
+git clone https://github.com/ultralytics/yolov5 ~/yolo
 
 ```
 
 bash
 
 ```
-cd object
+cd yolo
 ```
 
 ### yolov5 installieren
